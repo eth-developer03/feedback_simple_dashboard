@@ -209,3 +209,9 @@ Fetch all reviews (for admin dashboard)
 5. **Database errors**: User-friendly error messages
 6. **Network timeouts**: Loading states and retry options
 
+
+## LINKS 
+
+**DEPLOYED USER LINK** : https://feedback-simple-dashboard.vercel.app/user
+**DEPLOYED ADMIN LINK** : https://feedback-simple-dashboard.vercel.app/admin
+**REPORT LINK** : https://drive.google.com/file/d/11vZ6z9YQSd1Q2mWT7To8NGgVfZQYfeN4/view?usp=sharing
