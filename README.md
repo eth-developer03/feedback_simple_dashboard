@@ -1,8 +1,75 @@
-# Fynd AI Feedback System
+# Fynd AI Intern - Take Home Assessment 2.0
 
-A production-grade, AI-powered customer feedback management system with dual dashboards for user submissions and admin analytics.
+**Candidate:** Kartikeya Pandey  
+**Submission Date:** 7th January 2026
 
-## 🎯 Project Overview
+A comprehensive assessment demonstrating prompt engineering expertise and production-grade full-stack development with AI integration.
+
+---
+
+## 📋 Project Overview
+
+This repository contains two complete deliverables:
+
+### **Task 1**: Yelp Review Rating Prediction (Prompt Engineering)
+Advanced prompt engineering with systematic evaluation of multiple approaches for classifying Yelp reviews into 1-5 star ratings.
+
+### **Task 2**: AI-Powered Feedback Management System
+Production-grade web application with dual dashboards (User + Admin) featuring real-time analytics and AI-generated insights.
+
+---
+
+## 🎯 Task 1: Rating Prediction via Prompting
+
+### Objective
+Design and evaluate prompting strategies to classify Yelp reviews into star ratings (1-5) with structured JSON output.
+
+### Notebook: `https://www.kaggle.com/code/kartikeyapandey04/task1-yelp-rating-prediction`
+
+### Prompting Approaches Implemented
+
+| # | Approach | Strategy | Key Innovation |
+|---|----------|----------|----------------|
+| 1 | **Baseline** | Simple, direct instruction | Establishes performance baseline |
+| 2 | **Context-Enhanced** | Added explicit rating criteria | Defines what each star level means |
+| 3 | **Few-Shot Learning** | Concrete examples (1 per rating) | Pattern learning from examples |
+| 4 | **Chain-of-Thought** | Step-by-step reasoning | Explicit analysis before decision |
+
+### Evaluation Metrics
+
+- **Exact Accuracy**: Predicted rating matches actual rating
+- **Off-by-One Accuracy**: Prediction within ±1 star (more lenient)
+- **JSON Validity Rate**: Percentage of properly formatted responses
+- **Confusion Matrix**: Per-rating error analysis
+
+### Dataset
+- **Source**: Yelp Reviews (Kaggle)
+- **Sample Size**: 200 reviews (stratified across all ratings)
+- **Approach**: Balanced sampling (40 reviews per star rating)
+
+### Key Findings
+
+**Best Performing Approach:** Few-Shot Learning consistently achieved highest accuracy by teaching through concrete examples rather than abstract rules.
+
+**Common Error Pattern:** Adjacent ratings (3★ vs 4★) most frequently confused due to subtle sentiment differences.
+
+**JSON Reliability:** All approaches achieved >95% validity through careful prompt structure and output format specification.
+
+### Tech Stack
+- **LLM**: Groq API (Llama 3.3-70B) - Free, fast inference
+- **Libraries**: pandas, scikit-learn, matplotlib, seaborn
+- **Evaluation**: Stratified sampling, confusion matrices, comparative analysis
+
+
+### Generated Artifacts
+- `approach_comparison.csv` - Performance metrics table
+- `approach_comparison.png` - Visual comparison charts
+- `confusion_matrices.png` - Detailed error patterns
+- `approach_X_predictions.csv` - Full predictions for each approach
+
+---
+
+## 🚀 Task 2: AI Feedback Management System
 
 This system demonstrates a complete production workflow for handling customer feedback with AI integration:
 - **User Dashboard**: Public-facing interface for customers to submit ratings and reviews
