@@ -56,7 +56,7 @@ Design and evaluate prompting strategies to classify Yelp reviews into star rati
 **JSON Reliability:** All approaches achieved >95% validity through careful prompt structure and output format specification.
 
 ### Tech Stack
-- **LLM**: Groq API (Llama 3.3-70B) - Free, fast inference
+- **LLM**: Open AI 
 - **Libraries**: pandas, scikit-learn, matplotlib, seaborn
 - **Evaluation**: Stratified sampling, confusion matrices, comparative analysis
 
